@@ -1,0 +1,5 @@
+_sourceCategory=prod/web/nginx
+| parse regex "GET\s+(?<path>/api/data)\s+.*response_time=(?<rtSec>\d+(\.\d+)?)"
+| where rtSec > 3
+| count as slowHits
+

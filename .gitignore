@@ -1,0 +1,17 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+# OS / IDE
+.DS_Store
+.vscode/
+
+# Archives / notebooks
+*.ipynb
+*.tar.gz
